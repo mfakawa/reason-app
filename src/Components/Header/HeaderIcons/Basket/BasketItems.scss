@@ -1,0 +1,60 @@
+.basket-item {
+  border: 1px solid black;
+  border-bottom: none;
+  &:last-child {
+    border-bottom: 1px solid black;
+  }
+  .item-name {
+    position: relative;
+    font-size: 24px;
+    padding: 12px 15px;
+    margin: 0;
+    text-align: left;
+    span {
+      position: absolute;
+      right: 0;
+      margin: 0 15px;
+      img {
+        padding: 5px;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .item-operations {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 20px 15px 20px;
+    margin: 0 10px;
+    border-bottom: 1px solid #a9a9a9;
+    button {
+      display: inline-block;
+      background-color: black;
+      height: 20px;
+      width: 21px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      font-size: 16px;
+    }
+    span {
+      display: inline-block;
+      margin: 0 10px;
+      text-align: center;
+    }
+  }
+  .item-cost {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+}
+.total-cost {
+  padding: 15px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+section {
+  border-bottom: 1px solid black;
+  padding: 0 0 10px 0;
+  a {
+    h1 {
+      display: inline-block;
+      font-size: 30px;
+      margin: 20px 0 5px 0;
+      @media (max-width: 446px) {
+        margin: 20px 0;
+      }
+    }
+  }
+  .header-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media (max-width: 446px) {
+      position: static;
+      text-align: right;
+    }
+    .english {
+      display: inline-block;
+      background-color: black;
+      img {
+        height: 35px;
+        padding: 10px;
+        cursor: pointer;
+        filter: invert(100%);
+      }
+    }
+    .user {
+      display: inline-block;
+      background-color: white;
+      img {
+        height: 35px;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
